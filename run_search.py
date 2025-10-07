@@ -10,7 +10,7 @@ from collections import defaultdict, OrderedDict
 # Regex matches name, udim, extension.
 TXT_REGEX = re.compile(r'^(?P<name>.*?)[^\d](?P<udim>\d{4})\.(?P<ext>\w+)$')
 TARGET_FILETYPES = {"tif", "exr", "txt", "jpeg", "jpg"}
-OUTDIR = "/dept/ra/mhartney/MariTools/texture_import_tool/apps/backend/temp"
+OUTDIR = "/path/to/temp/file/folder"
 
 
 def log(msg): print(msg, flush=True)
