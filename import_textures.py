@@ -4,7 +4,7 @@ import os, sys
 
 def set_up_project():
     """Confgure env for running application."""
-    file_path = "/dept/ra/mhartney/MariTools/texture_import_tool_edit/apps/frontend/import_textures.py"
+    file_path = "/path/to/import_textures.py"
     sys.modules["__main__"].__file__ = file_path
     file_parent = os.path.dirname(__file__)
     parent_dir = os.path.dirname(file_parent)
@@ -43,7 +43,7 @@ import mari
 # === Constant / Global Variables === 
 # Example match / groups 'opacity.1001.tif' --> (opacity<name>)(.<sep>)(1001<udim>).(tif<ext>)
 TXT_REGEX = re.compile(r'^(?P<name>.+?)(?P<sep>[^0-9])(?P<udim>\d{4})\.(?P<ext>\w+)$', re.IGNORECASE)
-SCRIPT = "/dept/ra/mhartney/MariTools/texture_import_tool_edit/apps/backend/run_search.py"
+SCRIPT = "/path/to/run_search.py"
 
 # === Widgets ===
 
